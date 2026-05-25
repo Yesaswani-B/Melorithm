@@ -7,7 +7,7 @@ export default function Navbar() {
       <div className="navbar-inner">
         <NavLink to="/" className="navbar-logo">
           <span className="logo-icon">🎵</span>
-          <span className="logo-text gradient-text">SoundMatch</span>
+          <span className="logo-text gradient-text">Melorithm</span>
         </NavLink>
 
         <ul className="navbar-links">

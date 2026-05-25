@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className="page-wrapper about-page">
       <div className="about-header">
-        <h1 className="title">About <span className="gradient-text">SoundMatch</span></h1>
+        <h1 className="title">About <span className="gradient-text">Melorithm</span></h1>
         <p className="subtitle">The story behind the music recommendations.</p>
       </div>
 
@@ -30,7 +30,7 @@ export default function About() {
           <div className="section-label">🧠 The Algorithm</div>
           <h2>How It Works</h2>
           <p>
-            SoundMatch uses a <strong>K-Nearest Neighbors (KNN)</strong> algorithm to find songs that are mathematically similar to your target track. The model analyzes 9 distinct acoustic features extracted from the Spotify dataset to calculate the "distance" between songs in a multi-dimensional feature space using <strong>cosine similarity</strong>.
+            Melorithm uses a <strong>K-Nearest Neighbors (KNN)</strong> algorithm to find songs that are mathematically similar to your target track. The model analyzes 9 distinct acoustic features extracted from the Spotify dataset to calculate the "distance" between songs in a multi-dimensional feature space using <strong>cosine similarity</strong>.
           </p>
           <p>
             When you search for a song, the system scales its audio features using a pre-fitted <code>StandardScaler</code>, then queries the trained model to find the 5 closest neighbors — songs with the most similar acoustic profile.
