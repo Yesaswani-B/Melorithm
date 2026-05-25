@@ -1,0 +1,74 @@
+[
+    {
+        "acousticness": 0.294,
+        "artists": "Kartellen;Aleks",
+        "danceability": 0.418,
+        "energy": 0.872,
+        "popularity": 34,
+        "similarity": 0.9808,
+        "tempo": 80,
+        "track_genre": "swedish",
+        "track_name": "Underklassmusik",
+        "valence": 0.795
+    },
+    {
+        "acousticness": 0.063,
+        "artists": "Stone Sour",
+        "danceability": 0.286,
+        "energy": 0.547,
+        "popularity": 54,
+        "similarity": 0.9877,
+        "tempo": 174.7,
+        "track_genre": "grunge",
+        "track_name": "Taciturn",
+        "valence": 0.453
+    },
+    {
+        "acousticness": 0.671,
+        "artists": "Larry Gaaga;Flavour",
+        "danceability": 0.83,
+        "energy": 0.766,
+        "popularity": 0,
+        "similarity": 0.9769,
+        "tempo": 95,
+        "track_genre": "dancehall",
+        "track_name": "Tene",
+        "valence": 0.932
+    },
+    {
+        "acousticness": 0.569,
+        "artists": "Santesh;Amos Paul",
+        "danceability": 0.801,
+        "energy": 0.673,
+        "popularity": 29,
+        "similarity": 0.9767,
+        "tempo": 90,
+        "track_genre": "malay",
+        "track_name": "Yaaro",
+        "valence": 0.789
+    },
+    {
+        "acousticness": 0.565,
+        "artists": "El Gran Combo De Puerto Rico",
+        "danceability": 0.795,
+        "energy": 0.623,
+        "popularity": 65,
+        "similarity": 0.9766,
+        "tempo": 93,
+        "track_genre": "salsa",
+        "track_name": "Brujeria",
+        "valence": 0.96
+    },
+    {
+        "acousticness": 0.001,
+        "artists": "Divisi\u00f3n Min\u00fascula;Mariana Priego",
+        "danceability": 0.437,
+        "energy": 0.879,
+        "popularity": 36,
+        "similarity": 0.9659,
+        "tempo": 123.1,
+        "track_genre": "punk-rock",
+        "track_name": "Betty Boop",
+        "valence": 0.61
+    }
+]
