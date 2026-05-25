@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)
 
 # ── Load pickled artifacts ────────────────────────────────────────────────────
-BASE = os.path.join(os.path.dirname(__file__), "..")
+BASE = os.path.dirname(os.path.abspath(__file__))  # backend/
 
 print("Loading model artifacts…")
 with open(os.path.join(BASE, "model.pkl"), "rb") as f:
@@ -129,7 +129,7 @@ def favorite():
     if not data:
         return jsonify({"error": "No data provided"}), 400
         
-    folder_path = os.path.join(BASE, "best_matched")
+    folder_path = os.path.join(BASE, "..", "best_matched")
     os.makedirs(folder_path, exist_ok=True)
     
     file_path = os.path.join(folder_path, "favorites.json")
@@ -157,7 +157,7 @@ def favorite():
 @app.route("/api/favorites", methods=["GET"])
 def get_favorites():
     """Retrieve all favorited songs from the best_matched folder."""
-    folder_path = os.path.join(BASE, "best_matched")
+    folder_path = os.path.join(BASE, "..", "best_matched")
     file_path = os.path.join(folder_path, "favorites.json")
     
     if not os.path.exists(file_path):

@@ -1,8 +1,4 @@
-# Large data files
-dataset.csv
-*.csv
-
-# Pickle / model files (large binary blobs)
+# Pickle / model files (regenerated at build time on Render)
 *.pkl
 
 # Python
