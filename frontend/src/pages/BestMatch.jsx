@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './BestMatch.css';
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+
 export default function BestMatch() {
   const [favorites, setFavorites] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -10,7 +12,7 @@ export default function BestMatch() {
   useEffect(() => {
     const fetchFavorites = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/favorites');
+        const res = await axios.get(`${API_URL}/api/favorites`);
         setFavorites(res.data);
       } catch (err) {
         setError('Failed to load your best matched songs.');

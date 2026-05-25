@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import './Home.css';
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+
 export default function Home() {
   const [query, setQuery] = useState('');
   const [suggestions, setSuggestions] = useState([]);
@@ -30,7 +32,7 @@ export default function Home() {
         return;
       }
       try {
-        const res = await axios.get(`http://localhost:5000/api/search?q=${encodeURIComponent(query)}`);
+        const res = await axios.get(`${API_URL}/api/search?q=${encodeURIComponent(query)}`);
         setSuggestions(res.data);
       } catch (err) {
         console.error("Search error", err);
@@ -52,7 +54,7 @@ export default function Home() {
     setRecommendations(null);
 
     try {
-      const res = await axios.get(`http://localhost:5000/api/recommend`, {
+      const res = await axios.get(`${API_URL}/api/recommend`, {
         params: {
           track_name: song.track_name,
           artist: song.artists
@@ -71,7 +73,7 @@ export default function Home() {
     if (favorites.has(key)) return;
     
     try {
-      await axios.post('http://localhost:5000/api/favorite', song);
+      await axios.post(`${API_URL}/api/favorite`, song);
       setFavorites(prev => new Set(prev).add(key));
     } catch (err) {
       console.error("Failed to favorite", err);
