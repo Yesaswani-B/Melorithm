@@ -113,7 +113,7 @@ export default function Home() {
           </div>
 
           {showDropdown && suggestions.length > 0 && (
-            <div className="suggestions glass">
+            <div className="suggestions">
               {suggestions.map((song, i) => (
                 <div key={i} className="suggestion-item" onClick={() => handleSelectSong(song)}>
                   <div className="song-info">

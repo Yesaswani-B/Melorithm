@@ -28,6 +28,7 @@
   width: 100%;
   max-width: 640px;
   position: relative;
+  z-index: 100;
 }
 
 .search-bar {
@@ -89,6 +90,11 @@
   padding: 8px;
   animation: slideDown 0.2s ease-out;
   text-align: left;
+  background: rgba(8, 11, 20, 0.95);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.8);
 }
 
 @keyframes slideDown {
