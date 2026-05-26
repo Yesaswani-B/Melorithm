@@ -17,7 +17,7 @@ export default function About() {
             </div>
             <div className="creator-text">
               <h2>Yesaswani Boddepalli</h2>
-              <span className="grade-badge">10th Grade</span>
+              <span className="grade-badge">High School Student</span>
               <p className="creator-bio">
                 I immensely enjoy listening to music. I used machine learning for this specific project to make predictions, get new music recommendations, and discover new melodies. I used ReactJS to create a modern, eye-catching, and user-friendly web app as a demo.
               </p>
